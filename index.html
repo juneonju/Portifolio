@@ -1,0 +1,182 @@
+<!DOCTYPE html> <!--informa ao navegador que é um documento HTML5-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="assets/script/script.js" defer></script>
+</head>
+<body>
+ <header id="header">
+        <h1 id="header-title">José Bulhões</h1>
+        <nav id="menu">
+            <a href="#about-me" class="hover">Sobre</a>
+            <a href="#hard-skills" class="hover">Habilidades</a>
+            <a href="#projetos" class="hover">Projetos</a>
+            <a href="#footer" class="hover">Contato</a>
+        </nav>
+
+        <button id="changeColor" class="hover">Alterar Iluminação</button>
+ </header>
+    <main id="main">
+
+        <div id="basic-info">
+            <div id="basic-info-selfie">
+                <img src="assets/images/selfie.jpeg" alt="foto do desenvolvedor">
+            </div>
+            <div id="basic-info-name">
+                <h2>José Bulhões Gomes Júnior</h2>
+                <p>Desenvolvedor Fullstack</p>
+            </div>
+        </div>
+        
+        <section id="about-me">
+            <h2 class="titulo-h2">Minha trajetória na programação</h2>
+
+            <p>
+                Minha jornada na área de tecnologia começou em 2021,
+                quando iniciei meus estudos em programação. Desde então,
+                venho construindo minha base técnica por meio de estudos
+                e experiências de aprendizado contínuo.
+            </p>
+
+            <p>
+                Concluí o curso Técnico em Informática para Internet pelo
+                SENAI, onde desenvolvi conhecimentos em desenvolvimento web,
+                HTML, CSS, JavaScript, metodologias ágeis, Figma, Git,
+                bancos de dados relacionais e desenvolvimento de APIs
+                com Java e Spring Boot.
+            </p>
+
+            <p>
+                Atualmente, curso Ciência da Computação e participo do
+                bootcamp 1000DEVS - STARTER, ampliando meus conhecimentos
+                em desenvolvimento de software, especialmente nas áreas
+                de front-end e back-end.
+            </p>
+
+            <p>
+                Tenho direcionado meus estudos para o desenvolvimento
+                Full Stack, aprofundando meus conhecimentos em JavaScript,
+                TypeScript, Node.js, APIs RESTful e PostgreSQL.
+            </p>
+        </section>
+        <hr>
+        <section id="hard-skills">
+            <h2 class="titulo-h2">Tecnologias:</h2>
+            <ul id="grid">
+                <li>
+                    <i class="bi bi-filetype-java"></i> <PRogress value="60" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-filetype-html"></i> <PRogress value="80" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-css"></i> <PRogress value="80" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-javascript"></i> <PRogress value="60" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-typescript"></i> <PRogress value="40" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-git"></i> <PRogress value="80" max="100"></PRogress>
+                </li>
+
+                <li>
+                    <i class="bi bi-bootstrap-fill"></i> <PRogress value="60" max="100"></PRogress>
+                </li>
+            </ul>
+        </section>
+        
+        <hr>
+            
+        
+        <section id="projetos">
+            <h2 class="titulo-h2">Meus Projetos:</h2>
+
+            <div id="projetos-amostra">
+
+                <!-- Projeto 1 -->
+                <div class="projeto hover" tabindex="0" data-titulo="RD Investimentos" data-descricao="Meu primeiro projeto realizado no SENAI, versionando codigo com um grupo de pessoas e consumindo uma API de investimentos." data-video="assets/videos/rd-investimentos.mp4">
+                    <h3>RD Investimentos</h3>
+                    <img src="./assets/images/rd-investimentos.png" alt="Projeto RD Investimentos">
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="projeto hover" tabindex="0" data-titulo="CRUD de usuários" data-descricao="Realizei um projeto pessoal pra entender melhor o funcionando de um CRUD, então fiz esse gerenciamento de usuarios utilizando java, spring boot e o banco H2." data-video="assets/videos/basic-crud.mp4">
+                    <h3>CRUD de usuários básico</h3>
+                    <img src="assets/images/basic-crud.png" alt="Projeto CRUD de usuários">
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="projeto hover" tabindex="0" data-titulo="Bikcraft" data-descricao="Projeto pessoal realizado a partir dos estudos do curso origamid de design UI/UX, HTML, CSS, JS" data-video="assets/videos/bikcraft.mp4">
+                    <h3>Bikcraft</h3>
+                    <img src="./assets/images/bikcraft.png" alt="Projeto Bikcraft">
+                </div>
+
+            </div>
+        </section>
+
+        <div id="modal-projeto" class="modal" hidden>
+        <div class="modal-conteudo" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+
+            <button id="fechar-modal" class="fechar-modal" aria-label="Fechar modal">
+                &times;
+            </button>
+
+            <h2 id="modal-titulo">Nome do projeto</h2>
+
+            <div class="modal-descricao">
+                <h3>Sobre o projeto</h3>
+                <p id="modal-descricao">
+                    Aqui você poderá escrever um parágrafo explicando
+                    o objetivo do projeto, como foi desenvolvido e
+                    quais funcionalidades foram implementadas.
+                </p>
+            </div>
+
+            <div class="modal-video">
+                <h3>Projeto em funcionamento</h3>
+
+                <video id="modal-video" controls playsinline preload="metadata">
+                    <source id="video-source" src="" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos.
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+    <footer id="footer">
+        <div id="footer-links">
+            <div id="footer-links-icons">
+                <a href="https://github.com/juneonju" target="" class="hover"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-bulh%C3%B5es/" target="" class="hover"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/jb_g_junior/" target="" class="hover"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/5582993736767" target="" class="hover"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div id="footer-links-routs">
+                <a href="#header" class="hover">Inicio</a>
+                <a href="#about-me" class="hover">Sobre</a>
+                <a href="https://wa.me/5582993736767" class="hover">Contato</a>
+            </div>
+        </div>
+        <div id="footer-copy">
+            <p><small>&copy; 2026 - Todos os direitos reservados.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
